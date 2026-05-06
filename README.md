@@ -24,18 +24,12 @@ GENERATION EXPANSION PLANNING
 * INGP1118_LeastCost_GenerationPlan.ipynb: This notebook performs generation expansion planning with the method of least cost (levelized bus-bar analysis). It computes annual energy, base-year annual cost, several economic factors and costs. It outputs results as tables. 
 
 TRANSMISSION EXPANSION PLANNING
-* INGP1118_PowerFlow_AC_decoupledDC.ipynb:
-* * Introductory notebook to evaluate AC power flow and decoupled AC power flow (DC power flow) using 'pypower' and .xlsx workbook data entry in MATPOWER format. This allows introduction to transmission expansion constraints into more complex problems
-* INGP1118_TransmissionExpansion_LinearDC-OPF.ipynb:
-* * This notebook implements a Linear Decoupled DC Optimal Power Flow. It considers minimization of total cost of generation with the following constraints: decoupled DC power balance on each bus, generators' limits, and slack angle. There are no power limits in the transmission lines yet. Pyomo + HiGHS are used. Pyomo as the optimization language and HiGHS as the solver.
-* INGP1118_TransmissionExpansion_LinearDC-OPF-LineLimits.ipynb:
-* * Starting with 'INGP1118_TransmissionExpansion_LinearDC-OPF.ipynb', we enforce transmission lines limits. It considers linear cot function for the generators. Locational Marginal Price is introduced to understand what happens in real markets with congestion and high wind penetration.
-* INGP1118_TransmissionExpansion_TEP_DC-OPF.ipynb:
-* * Here, a classical transmission expansion problem based in DC-OPF is solved. This problem is modeled as a Mixed Integer Linear Programming problem (MILP)
-* INGP1118_TransmissionExpansion_SC_TEP_DC-OPF.ipynb:
-* * This notebook solves a classical security constrained transmission expansion planning problem. Mathematically, the planning decision is forced to comply to feasibility after each contingency, so that constraints are replicated over several scenarios and depend on binary investment decisions.
-* INGP1118_TransmissionExpansion_SecurityConstr_LinearDC-OPF.ipynb:
-* * This solves a Linear security-constrained decoupled DC optimal power flow problem. The quadratic cost functions of the generators are approximated by piecewise linear cost functions. Here, differences between preventive SCOPF and corrective SCOPF are evident and helps in the study of the two cases.
+* INGP1118_PowerFlow_AC_decoupledDC.ipynb: Introductory notebook to evaluate AC power flow and decoupled AC power flow (DC power flow) using 'pypower' and .xlsx workbook data entry in MATPOWER format. This allows introduction to transmission expansion constraints into more complex problems
+* INGP1118_TransmissionExpansion_LinearDC-OPF.ipynb: This notebook implements a Linear Decoupled DC Optimal Power Flow. It considers minimization of total cost of generation with the following constraints: decoupled DC power balance on each bus, generators' limits, and slack angle. There are no power limits in the transmission lines yet. Pyomo + HiGHS are used. Pyomo as the optimization language and HiGHS as the solver.
+* INGP1118_TransmissionExpansion_LinearDC-OPF-LineLimits.ipynb: Starting with 'INGP1118_TransmissionExpansion_LinearDC-OPF.ipynb', we enforce transmission lines limits. It considers linear cot function for the generators. Locational Marginal Price is introduced to understand what happens in real markets with congestion and high wind penetration.
+* INGP1118_TransmissionExpansion_TEP_DC-OPF.ipynb: Here, a classical transmission expansion problem based in DC-OPF is solved. This problem is modeled as a Mixed Integer Linear Programming problem (MILP)
+* INGP1118_TransmissionExpansion_SC_TEP_DC-OPF.ipynb: This notebook solves a classical security constrained transmission expansion planning problem. Mathematically, the planning decision is forced to comply to feasibility after each contingency, so that constraints are replicated over several scenarios and depend on binary investment decisions.
+* INGP1118_TransmissionExpansion_SecurityConstr_LinearDC-OPF.ipynb: This solves a Linear security-constrained decoupled DC optimal power flow problem. The quadratic cost functions of the generators are approximated by piecewise linear cost functions. Here, differences between preventive SCOPF and corrective SCOPF are evident and helps in the study of the two cases.
 
 
 TRANSMISSION DESIGN
